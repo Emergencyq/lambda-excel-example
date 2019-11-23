@@ -1,0 +1,27 @@
+{
+  "name": "lambda-excel-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "excel4node": "^1.7.2",
+    "serverless-offline": "^5.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "serverless offline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beingtyson/lambda-excel-example.git"
+  },
+  "keywords": [
+    "lambda-excel-example"
+  ],
+  "author": "Hyunyoung Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beingtyson/lambda-excel-example/issues"
+  },
+  "homepage": "https://github.com/beingtyson/lambda-excel-example#readme"
+}
