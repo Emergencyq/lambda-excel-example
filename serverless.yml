@@ -23,7 +23,9 @@ service: lambda-excel-example
 provider:
   name: aws
   runtime: nodejs12.x
-
+  apiGateway:
+    binaryMediaTypes:
+      - '*/*'
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
@@ -63,6 +65,8 @@ functions:
     events:
       - http: ANY /
       - http: "ANY {proxy+}"
+        cors: true
+        contentHandling: CONVERT_TO_BINARY
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
@@ -109,3 +113,10 @@ functions:
 #       Value: "Some output value"
 plugins:
   - serverless-offline
+  - serverless-apigw-binary
+  - serverless-apigwy-binary
+
+custom:
+  apigwBinary:
+    types:           #list of mime-types
+      - '*'
