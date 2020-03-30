@@ -14,8 +14,6 @@ This module is also easy to use <br>
 This module support many functions <br>
 You'd better use this module if you can <br>
 
-## Api gateway does not support Stream reponse
-
 
 ## Usage
 1. cd exceljs
