@@ -3,14 +3,14 @@ xlsx file download using aws lambda
 
 ## excel4node
 This module is easy to use <br>
-But, excel4node module is not supported stream <br>
+But, this module does not support streams <br>
 When you make the big data's excel file, the lambda function's memory can be maxed out <br>
-This module is only using buffer <br>
+This module uses only buffers <br>
 
 ## exceljs
 This module is also easy to use <br>
-This module is suporrted a lot of functions <br>
-You'd better use this module if you can. <br>
+This module support many functions <br>
+You'd better use this module if you can <br>
 
 
 ## Usage
