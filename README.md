@@ -13,7 +13,7 @@ This module is suporrted a lot of functions <br>
 You'd better use this module if you can. <br>
 
 
-## install
+## Usage
 1. cd exceljs
 2. npm install serverless -g
 3. npm i
