@@ -1,0 +1,26 @@
+service: lambda-excel-example
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  apiGateway:
+    binaryMediaTypes:
+      - "*/*"
+functions:
+  handler:
+    handler: handler.server
+    events:
+      - http: ANY /
+      - http: "ANY {proxy+}"
+        cors: true
+        contentHandling: CONVERT_TO_BINARY
+
+plugins:
+  - serverless-offline
+  - serverless-apigw-binary
+  - serverless-apigwy-binary
+
+custom:
+  apigwBinary:
+    types: #list of mime-types
+      - "*"

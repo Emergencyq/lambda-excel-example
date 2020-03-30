@@ -1,5 +1,4 @@
-'use strict';
-var xl = require('excel4node');
+const xl = require('excel4node');
 module.exports.server = async (event, context, callback) => {
   const fileName = 'Excel.xlsx'
 
