@@ -1,7 +1,7 @@
 # lambda-excel-example
-xlsx file download using aws lambda
-Api gateway does not support Stream reponse
-So I used a file stream within lambda local.
+xlsx file download using aws lambda<br>
+<b> Api gateway does not support Stream reponse </b> <br>
+So I used a file stream within lambda local.<br>
 
 ## excel4node
 This module is easy to use <br>
