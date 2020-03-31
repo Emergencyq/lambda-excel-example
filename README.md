@@ -1,6 +1,6 @@
 # lambda-excel-example
 xlsx file download using aws lambda<br>
-<b> Api gateway does not support Stream reponse </b> <br>
+<b> Api gateway does not support Stream reponse(Except Api gateway's websocket) </b> <br>
 So I used a file stream within lambda local.<br>
 
 ## excel4node
